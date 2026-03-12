@@ -1,5 +1,5 @@
 /*******************************************************************
- * Created by the JDE: Thu Mar 12 11:34:52 EDT 2026
+ * Created by the JDE: Thu Mar 12 11:56:30 EDT 2026
  * WARNING: If you are editing this file from outside the JDE, you
  * should make sure to load the changes back into the JDE by setting
  * the preference "Check for outside changes..." in the "Text Editor"
@@ -12,7 +12,8 @@ package ReservoirLibrary;
 
 /**
  * 
- */public event InitReservoirEvent extends BDIGoalEvent {
+ */
+public event InitReservoirEvent extends BDIGoalEvent {
 
     #posted as
     post()
