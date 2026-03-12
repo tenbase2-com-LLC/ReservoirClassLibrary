@@ -1,0 +1,13 @@
+log4j.rootLogger=DEBUG, outputfile
+
+log4j.appender.standardconsole=org.apache.log4j.ConsoleAppender
+log4j.appender.standardconsole.layout=org.apache.log4j.PatternLayout
+log4j.appender.standardconsole.layout.ConversionPattern=%d [%c] %-5p - %m%n
+
+log4j.appender.outputfile=org.apache.log4j.FileAppender
+log4j.appender.outputfile.file=cojack_log4j.log
+log4j.appender.outputfile.layout=org.apache.log4j.PatternLayout
+log4j.appender.outputfile.layout.ConversionPattern=%d [%c@%t] %-5p - %m%n
+
+log4j.appender.logfactor=org.apache.log4j.lf5.LF5Appender
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--
+	To record a new trace insert a new tag named trace under the tracers element.
+	The trace element will contain key elements specifing what to trace.
+	ie:
+		<tracers>
+			<trace file="file.txt">
+				<key agent="goofy" class="disney" object="*"/>
+			</trace>
+		</tracer>
+
+	XML syntax summary:
+    - tracers:
+    	maxTraceLineRecord: how many table rows to show in the datalog tabs
+    	- trace:
+    		file: the file to print the datalog to (default null)
+    		- key:
+    			agent: the agent list to log, separated by a comma char (default *)
+    			class: the class list to log, separated by a comma char (default *)
+    			object: the object list to log, separated by a comma char (default *)
+    			
+    Notes: 
+    	- * (JOLLY_ELEMENT) is meant to match with every datalog element
+    	- when default is specified, the attribute is optional
+    	- all elements (but the tracers) are unbounded (0..*) and specifically:
+    		i) each key is merged with the previous one creating list of entries (merging * always give *)
+    	- if no key is specified, a "jolly key" will be used, matching every tracer (like agent="*" class="*" object="*")
+-->
+
+<tracers maxTraceLineRecord="1000">
+</tracers>

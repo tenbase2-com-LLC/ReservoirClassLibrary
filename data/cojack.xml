@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>CoJack Configuration File</comment>
+<entry key="aos.cojack.configuration">/data/cojack_cognitive.xml</entry>
+<entry key="aos.cojack.tracer_configuration">/data/cojack_tracer.xml</entry>
+<entry key="aos.cojack.datalog_configuration">/data/cojack_datalog.xml</entry>
+<entry key="aos.cojack.datalog_logfile">cojack.datalog.out</entry>
+
+<entry key="aos.cojack.configuration.trace_history_size">20</entry>
+<entry key="aos.cojack.log4j">/data/cojack.log4j</entry>
+<entry key="aos.cojack.tracer.traceOnSyserr">false</entry>
+<entry key="aos.cojack.tracer.traceOnGUI">false</entry>
+<entry key="aos.cojack.datalog.traceOnGUI">false</entry>
+<entry key="aos.cojack.datalog.ISO3country">ITA</entry>
+
+<!-- Tracer gui parameter configuration -->
+<entry key="aos.cojack.tracer.gui.title_window">CoJACK Trace</entry>
+<entry key="aos.cojack.tracer.gui.minimize">false</entry>
+<entry key="aos.cojack.tracer.gui.positionscreen.x">50</entry>
+<entry key="aos.cojack.tracer.gui.positionscreen.y">50</entry>
+<entry key="aos.cojack.tracer.gui.width">800</entry>
+<entry key="aos.cojack.tracer.gui.height">600</entry>
+<!--End tracer gui parameter configuration -->
+
+<!-- Datalog gui parameter configuration -->
+<entry key="aos.cojack.datalog.gui.title_window">CoJACK Datalog</entry>
+<entry key="aos.cojack.datalog.gui.minimize">false</entry>
+<entry key="aos.cojack.datalog.gui.positionscreen.x">100</entry>
+<entry key="aos.cojack.datalog.gui.positionscreen.y">100</entry>
+<entry key="aos.cojack.datalog.gui.width">800</entry>
+<entry key="aos.cojack.datalog.gui.height">600</entry>
+<!--End datalog gui parameter configuration -->
+
+</properties>

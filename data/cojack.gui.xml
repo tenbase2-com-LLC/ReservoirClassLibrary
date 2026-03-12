@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>CoJack Configuration File</comment>
+<entry key="debug">false</entry>
+<entry key="symbols_file">symbols.def</entry>
+<entry key="last_loaded_file">C:\Users\patam\Documents\AOS\CoJACK\workspace\GeorgeAffective_20170130\data\cojack_cognitive.xml</entry>
+<entry key="pix_path">pix</entry>
+<entry key="log_file">cojack.gui.log</entry>
+<entry key="defaults">default_configuration.xml</entry>
+<entry key="aos.cojack.tracer.traceOnSyserr">false</entry>
+<entry key="aos.cojack.datalog.traceOnGUI">false</entry>
+<entry key="aos.cojack.tracer.traceOnGUI">false</entry>
+<entry key="aos.cojack.configuration.trace_history_size">20.0</entry>
+<entry key="formula_check_timeout">500.0</entry>
+<entry key="tree_view_mode">0</entry>
+</properties>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration start_time="0.0">
+    <parameter_group name="default">
+        <param name="ACTIVATION_NOISE" value="0.001"/>
+        <param name="PLAN_VALUE" value="0"/>
+        <param name="PARTIAL_MATCHING" value="false"/>
+        <param name="PLAN_SUCCESS_PROBABILITY" value="1.0"/>
+        <param name="K_DEPTH" value="2.0"/>
+        <param name="MAXIMUM_ASSOCIATIVE_STRENGTH" value="0.0"/>
+        <param name="SIMILAR_BELIEFS_MEMORY" value="2.0"/>
+        <param name="MISMATCH_SIMILARITY" value="0.0"/>
+        <param name="DECAY_RATE" value="0.75"/>
+        <param name="PLAN_ACTIVATION_NOISE" value="0.001"/>
+        <param name="EVENT_SIGNIFICANCE" value="20"/>
+        <param name="LATENCY_EXPONENT" value="1.0"/>
+        <param name="MISMATCH_PENALTY" value="1.0"/>
+        <param name="GOAL_ACTIVATION" value="1.0"/>
+        <param name="EVENT_SOURCE_SCALING_FACTOR" value="0.0"/>
+        <param name="PLAN_SUCCESS_COST" value="10"/>
+        <param name="DEFAULT_ACTION_TIME" value="0.050"/>
+        <param name="EXPECTED_GAIN_NOISE" value="1.0"/>
+        <param name="BASE_LEVEL_ACTIVATION" value="0.5"/>
+        <param name="PLAN_PERMANENT_ACTIVATION_NOISE" value="0.001"/>
+        <param name="BASE_LEVEL_CONSTANT" value="0.01"/>
+        <param name="LATENCY_FACTOR" value="0.05"/>
+        <param name="RANDOM_SEED" value=""/>
+        <param attribute="PlaceHolder-ContainsBeliefSetName"
+            name="SIMILARITY_FUNCTION" value="aos.cojack.base.NormalSimilarityCalculator"/>
+        <param name="ACTIVATION_THRESHOLD" value="0.0"/>
+        <param name="MAXIMUM_DIFFERENCE" value="-1.0"/>
+        <param name="PERMANENT_ACTIVATION_NOISE" value="0.001"/>
+        <parameter_group name="GeorgeReservoir">
+            <param name="george_parameter" value="1"/>
+            <moderator events_decay_time="0.0"
+                reservoir_formula="if (reservoir - 0.2525 * dt > 0) then (reservoir - 0.2525 * dt) else 0.0;" type="Value">
+                <param name="reservoir" value="0"/>
+                <applies_to formula="reservoir" name="george_parameter"/>
+            </moderator>
+        </parameter_group>
+    </parameter_group>
+</configuration>
